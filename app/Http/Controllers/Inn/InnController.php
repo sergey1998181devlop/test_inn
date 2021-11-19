@@ -35,12 +35,4 @@ class InnController extends BaseController
         ]);
     }
 
-    public function allInn()
-    {
-        dd(
-            Inn::all()->map(function(Inn $inn) {
-                return $inn->getAttributes();
-            })
-        );
-    }
 }
